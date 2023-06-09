@@ -2,6 +2,9 @@
 #define DASHBOARD_H
 
 #include <QMainWindow>
+#include <QtCharts>
+#include <QChartView>
+#include <QPieSeries>
 
 namespace Ui {
 class Dashboard;
@@ -19,6 +22,8 @@ private slots:
     void on_statsBtn_clicked();
 
     void on_usersBtn_clicked();
+
+    void on_btnEdit_clicked(int index);
 
 private:
     Ui::Dashboard *ui;
