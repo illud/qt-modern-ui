@@ -17,15 +17,18 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_loginBtn_clicked()
 {
+    //Opens dashboard widget
     Dashboard *dashb = new Dashboard;
     dashb->show();
 
+    //Closes current window(MainWindow)
     this->close();
 }
 
 
 void MainWindow::on_registerBtn_clicked()
 {
+    //Opens registerWindow widget
     RegisterWindow *registerW = new RegisterWindow;
     registerW->show();
 }
