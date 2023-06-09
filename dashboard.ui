@@ -80,7 +80,7 @@ QPushButton#usersBtn::focus:pressed{
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="statsBtn">
+    <widget class="QPushButton" name="compBtn">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -90,21 +90,21 @@ QPushButton#usersBtn::focus:pressed{
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">QPushButton#statsBtn { 
+      <string notr="true">QPushButton#compBtn { 
     background-color: transparent;
 	font: 900 9pt &quot;Arial Black&quot;;
 	color: rgb(255, 255, 255);
     border: 0px;
 }
 
-QPushButton#statsBtn:hover{ 
+QPushButton#compBtn:hover{ 
    background-color: transparent;
 	font: 900 9pt &quot;Arial Black&quot;;
 	color: rgb(203, 203, 203);
     border: 0px;
 }
 
-QPushButton#statsBtn::focus:pressed{ 
+QPushButton#compBtn::focus:pressed{ 
 	background-color: transparent;
 	font: 900 9pt &quot;Arial Black&quot;;
 	color: rgb(107, 107, 107);
@@ -114,7 +114,7 @@ QPushButton#statsBtn::focus:pressed{
 </string>
      </property>
      <property name="text">
-      <string>ANALYTICS</string>
+      <string>COMPONENTS</string>
      </property>
      <property name="flat">
       <bool>true</bool>
@@ -352,43 +352,108 @@ QPushButton#addUserBtn::focus:pressed{
      </widget>
     </widget>
     <widget class="QWidget" name="page_2">
-     <widget class="QPushButton" name="btn">
+     <widget class="QWidget" name="widget_3" native="true">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>30</y>
-        <width>231</width>
-        <height>41</height>
+        <x>70</x>
+        <y>110</y>
+        <width>120</width>
+        <height>191</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton#btn { 
-    background-color: rgb(41, 98, 255);
-	font: 900 9pt &quot;Arial Black&quot;;
-	color: rgb(255, 255, 255);
-    border: 0px;
-}
-
-QPushButton#btn:hover{ 
-    background-color: rgb(33, 78, 203);
-	font: 900 9pt &quot;Arial Black&quot;;
-	color: rgb(255, 255, 255);
-    border: 0px;
-}
-
-QPushButton#btn::focus:pressed{ 
-	background-color: rgb(38, 72, 184);
-	font: 900 9pt &quot;Arial Black&quot;;
-	color: rgb(255, 255, 255);
-    border: 0px;
-}
-</string>
+       <string notr="true">background-color: rgb(41, 98, 255);</string>
       </property>
-      <property name="text">
-       <string>ADD USER</string>
+     </widget>
+     <widget class="QWidget" name="widget_4" native="true">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>110</y>
+        <width>120</width>
+        <height>191</height>
+       </rect>
       </property>
-      <property name="flat">
-       <bool>true</bool>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(41, 98, 255);</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_5" native="true">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>110</y>
+        <width>120</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(41, 98, 255);</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_6" native="true">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>110</y>
+        <width>120</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(41, 98, 255);</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_7" native="true">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>320</y>
+        <width>120</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(41, 98, 255);</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_8" native="true">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>320</y>
+        <width>120</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(41, 98, 255);</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_9" native="true">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>320</y>
+        <width>120</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(41, 98, 255);</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_10" native="true">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>320</y>
+        <width>120</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(41, 98, 255);</string>
       </property>
      </widget>
     </widget>

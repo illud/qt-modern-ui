@@ -19,11 +19,13 @@ public:
     ~Dashboard();
 
 private slots:
-    void on_statsBtn_clicked();
-
     void on_usersBtn_clicked();
 
     void on_btnEdit_clicked(int index);
+
+    void loadData();
+
+    void on_compBtn_clicked();
 
 private:
     Ui::Dashboard *ui;
