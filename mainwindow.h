@@ -24,8 +24,17 @@ private slots:
 
     void on_registerBtn_clicked();
 
+    void on_closeBtn_clicked();
+
+    void on_minimizeBtn_clicked();
+
+protected:
+    void mousePressEvent(QMouseEvent *event);
+    void mouseMoveEvent(QMouseEvent *event);
+
 private:
     Ui::MainWindow *ui;
+    QPoint startPos;
 };
 
 #endif // MAINWINDOW_H

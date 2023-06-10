@@ -27,8 +27,17 @@ private slots:
 
     void on_compBtn_clicked();
 
+    void on_closeBtn_clicked();
+
+    void on_minimizeBtn_clicked();
+
+protected:
+    void mousePressEvent(QMouseEvent *event);
+    void mouseMoveEvent(QMouseEvent *event);
+
 private:
     Ui::Dashboard *ui;
+    QPoint startPos;
 };
 
 #endif // DASHBOARD_H

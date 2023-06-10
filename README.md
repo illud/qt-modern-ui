@@ -1,1 +1,1 @@
-# qt-modern-ui## Login![LOGIN](./img/login.png)## Dashboard![DASHBOARD](./img/dashboard.png)
+# qt-modern-ui## FeaturesCustom working title barCustom close and minimize buttonsCustom buttonsCustom tableWidgetCustom text edit## Login![LOGIN](./img/login.png)## Dashboard![DASHBOARD](./img/dashboard.png)

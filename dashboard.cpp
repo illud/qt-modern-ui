@@ -1,12 +1,14 @@
 #include "dashboard.h"
 #include "ui_dashboard.h"
 #include <QVector>
+#include <QMouseEvent>
 
 Dashboard::Dashboard(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Dashboard)
 {
     ui->setupUi(this);
+    Dashboard::setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     ui->stackedWidget->setCurrentWidget(0);
 
     loadData();
@@ -99,7 +101,6 @@ void Dashboard::on_compBtn_clicked()
     ui->stackedWidget->setCurrentIndex(1);
 }
 
-
 void Dashboard::on_usersBtn_clicked()
 {
     ui->stackedWidget->setCurrentIndex(0);
@@ -107,5 +108,30 @@ void Dashboard::on_usersBtn_clicked()
 
 void Dashboard::on_btnEdit_clicked (int index){
     qDebug() << index;
+}
+
+void Dashboard::mousePressEvent(QMouseEvent *event)
+{
+    startPos = event->pos();
+    QWidget::mousePressEvent(event);
+}
+
+void Dashboard::mouseMoveEvent(QMouseEvent *event)
+{
+    QPoint delta = event->pos() - startPos;
+    QWidget * w = window();
+    if(w)
+        w->move(w->pos() + delta);
+    QWidget::mouseMoveEvent(event);
+}
+
+void Dashboard::on_closeBtn_clicked()
+{
+    this->close();
+}
+
+void Dashboard::on_minimizeBtn_clicked()
+{
+    this->showMinimized();
 }
 
